@@ -1,14 +1,20 @@
-import  styles from './App.module.scss';
+import styles from './App.module.scss';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className={styles.App}>
-      <header className={styles.AppHeader}>
-        <h1> Felipe Souza Dias </h1>
-        <p> Software Engineer </p>
-        <p> <a href="https://www.linkedin.com/in/felipe-souza-dias-9b4b4b1b0/"> LinkedIn </a> </p>
+      <Router>
         
-      </header>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects"  />
+          <Route path="/project/:id" />
+          <Route path="/experience" />
+        </Routes>
+        
+      </Router>
     </div>
   );
 }
