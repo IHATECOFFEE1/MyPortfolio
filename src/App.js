@@ -1,20 +1,13 @@
 import styles from './App.module.scss';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './pages/Home';
+import Home from './components/Home';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
     <div className={styles.App}>
-      <Router>
-        
-        <Routes>
-          <Route path="/MyPortfolio" element={<Home />} />
-          <Route path="/projects"  />
-          <Route path="/project/:id" />
-          <Route path="/experience" />
-        </Routes>
-        
-      </Router>
+      <Home />
+      <Footer />
     </div>
   );
 }
