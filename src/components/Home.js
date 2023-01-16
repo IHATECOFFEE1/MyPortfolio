@@ -1,15 +1,25 @@
 import React from 'react';
+import styles from './Home.module.scss';
 
 function Home() {
     return (
-        <div className="home">
-            <div className="about">
-                <h2> Hi, My Name is Felipe</h2>
-                <div className="prompt">
-                    <p>A software developer with a passion for learning and creating.</p>
+        <div className={styles.home}>
+            <div className={styles.about}>
+                <div className={styles.welcome}>
+                    <h2> Wecome</h2>
+                    <h1> I'm <span className={styles.name}>Felipe Souza Dias</span></h1>
+                    <p> I am a Computer Science Bacheler student at the University of Central Florida. Planning on graduating May 2024</p>
+                </div>
 
+                <div className={styles.links}>
+                    <button> GitHub </button>
+                    <button> Resume </button>
+                    <button> Linkdin </button>
                 </div>
             </div>
+
+
+            
             <div className="skills">
                 <h1> Skills</h1>
                 <ol className="list">
