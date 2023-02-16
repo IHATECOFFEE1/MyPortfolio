@@ -6,7 +6,7 @@ function Home() {
         <div className={styles.home}>
             <div className={styles.about}>
                 <div className={styles.welcome}>
-                    <h2> Wecome</h2>
+                    <h2> Welcome</h2>
                     <h1> I'm <span className={styles.name}>Felipe Souza Dias</span></h1>
                     <p> I am a Computer Science Bacheler student at the University of Central Florida. Planning on graduating May 2024</p>
                 </div>
